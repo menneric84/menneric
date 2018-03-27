@@ -5,6 +5,9 @@
 /dist-server
 /tmp
 /out-tsc
+/functions
+/.firebaserc
+/firebase.json
 
 # dependencies
 /node_modules
