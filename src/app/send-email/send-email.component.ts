@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/toPromise';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-send-email',
@@ -12,17 +13,18 @@ export class SendEmailComponent implements OnInit {
   }
   endpoint = 'https://us-central1-menneric-197100.cloudfunctions.net/httpEmail';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,private router: Router) { }
 
 
   sendEmail() {
     const data = {
-      toEmail: 'menneric84@gmail.com',
-      toName: 'Jeff Delaney'
+      fromEmail: 'myCustomer@gmail.com',
+      fromName: 'Randy Savage',
+      text: 'This message is a test'
     }
 
-    this.http.post(this.endpoint, data).subscribe()
+    this.http.post(this.endpoint, data).subscribe();
+    this.router.navigate(['/']);
   }
-
 
 }
