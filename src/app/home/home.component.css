@@ -1,0 +1,12 @@
+.introGreet{
+    text-align: center;
+    padding-top : 20%;
+}
+.centerBtn{
+    background-color:transparent;
+    border-width:5px;
+    border-color:lightgrey;
+}
+.center{
+    text-align: center;
+}

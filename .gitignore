@@ -5,14 +5,15 @@
 /dist-server
 /tmp
 /out-tsc
+/functions
 /.firebaserc
 /firebase.json
-/functions/
+
 # dependencies
 /node_modules
 
 # IDEs and editors
-/.idea
+/.ideag
 .project
 .classpath
 .c9/
@@ -44,3 +45,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+"sendgrid.env"  source ./sendgrid.env

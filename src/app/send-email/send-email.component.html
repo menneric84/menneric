@@ -1,0 +1,14 @@
+<div class="container">
+    <label for="fname">Your Name</label>
+    <input type="text" [(ngModel)]="firstname" id="fname" name="firstname" placeholder="John Doe">
+
+    <label for="lname">Your Email</label>
+    <input type="text" [(ngModel)]="email"id="email" name="email" placeholder="email@youremaildomain.com">
+
+
+    <label for="message">Text</label>
+    <textarea id="message"  [(ngModel)]="message" name="text" placeholder="Put your message here!" style="height:200px"></textarea>
+
+    <button class="btn btn-secondary centerBtn" (click)="sendEmail()">Submit</button>
+    <button class="btn btn-secondary centerBtn" [routerLink]="['/']">Cancel</button>
+</div>
