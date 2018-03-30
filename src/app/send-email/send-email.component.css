@@ -13,9 +13,10 @@ input{
 }
 
 /* Add a background color and some padding around the form */
-.form {
+.container {
     border-radius: 5px;
     padding: 20px;
+    width:40%;
 }
 .centerBtn{
     background-color:transparent;

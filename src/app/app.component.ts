@@ -10,7 +10,6 @@ export class AppComponent {
   title = 'app';
   image_path = 'assets\background.jpg';
 
-
   constructor() { }
 
   ngOnInit() { 

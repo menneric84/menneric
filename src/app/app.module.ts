@@ -10,6 +10,7 @@ import { SendEmailComponent } from './send-email/send-email.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,11 +20,13 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     NavbarComponent,
     SendEmailComponent,
     HomeComponent
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
 
   ],
   providers: [HttpClient],

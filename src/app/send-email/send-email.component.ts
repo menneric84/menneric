@@ -11,6 +11,9 @@ import { Router } from '@angular/router';
 export class SendEmailComponent implements OnInit {
   ngOnInit() {
   }
+  firstname = '';
+  message = ''
+  email = ''
   endpoint = 'https://us-central1-menneric-197100.cloudfunctions.net/httpEmail';
 
   constructor(private http: HttpClient,private router: Router) { }
@@ -18,9 +21,9 @@ export class SendEmailComponent implements OnInit {
 
   sendEmail() {
     const data = {
-      fromEmail: 'myCustomer@gmail.com',
-      fromName: 'Randy Savage',
-      text: 'This message is a test'
+      fromEmail: this.email,
+      fromName: this.firstname,
+      text: this.message
     }
 
     this.http.post(this.endpoint, data).subscribe();
